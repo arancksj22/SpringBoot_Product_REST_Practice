@@ -1,0 +1,7 @@
+com\example\DemoApp\model\Product.class
+com\example\DemoApp\controller\HomeController.class
+com\example\DemoApp\MyAppApplication.class
+com\example\DemoApp\controller\LoginController.class
+com\example\DemoApp\controller\ProductController.class
+com\example\DemoApp\repository\ProductRepo.class
+com\example\DemoApp\service\ProductService.class
