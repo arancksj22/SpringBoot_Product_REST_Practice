@@ -1,11 +1,10 @@
 package com.example.DemoApp.service;
+
 import com.example.DemoApp.model.Product;
 import com.example.DemoApp.repository.ProductRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 @Service
@@ -41,12 +40,6 @@ public class ProductService {
     }
 
     public void deleteProduct(int prodId){
-        int index = 0;
-        for(int i = 0; i < products.size(); i++){
-            if(products.get(i).getProdId() == prodId){
-                index = i;
-            }
-        }
-        products.remove(index);
+        repo.deleteById(prodId);
     }
 }

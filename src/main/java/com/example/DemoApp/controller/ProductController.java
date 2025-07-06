@@ -1,5 +1,5 @@
 package com.example.DemoApp.controller;
-import com.example.DemoApp.repository.ProductRepo;
+
 import com.example.DemoApp.model.Product;
 import com.example.DemoApp.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,7 +20,7 @@ public class ProductController {
 
     @GetMapping("/products")
     public List<Product> getProducts(){
-        return repo.findALL();
+        return service.getProducts();
     }
 
     @GetMapping("/products/{prodId}")
